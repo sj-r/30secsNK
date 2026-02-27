@@ -1,0 +1,204 @@
+:root {
+  --bg0: #070A10;
+  --bg1: #0B1220;
+  --card: rgba(255, 255, 255, 0.06);
+  --card2: rgba(255, 255, 255, 0.08);
+  --stroke: rgba(255, 255, 255, 0.12);
+  --stroke2: rgba(255, 255, 255, 0.18);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.65);
+  --muted2: rgba(255, 255, 255, 0.45);
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --radius: 18px;
+  --radius2: 14px;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 10% 0%, rgba(120, 140, 255, 0.16), transparent 60%),
+    radial-gradient(900px 500px at 90% 20%, rgba(255, 120, 220, 0.12), transparent 55%),
+    radial-gradient(900px 700px at 50% 110%, rgba(120, 255, 210, 0.10), transparent 60%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 18px 26px;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--muted2);
+  margin: 0;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+  align-items: end;
+  padding: 12px;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.03));
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+select, button {
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke);
+  background: rgba(10, 12, 18, 0.55);
+  color: var(--text);
+  outline: none;
+}
+
+select:focus, button:focus {
+  border-color: var(--stroke2);
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06));
+  transition: transform 0.06s ease, filter 0.12s ease, border-color 0.12s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+  filter: brightness(1.08);
+}
+
+button.primary {
+  border-color: rgba(255,255,255,0.22);
+  background:
+    radial-gradient(120% 200% at 10% 0%, rgba(120, 140, 255, 0.32), transparent 55%),
+    linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
+}
+
+.card {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--card2), rgba(255,255,255,0.03));
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.pill {
+  font-size: 12px;
+  color: var(--muted);
+  border: 1px solid var(--stroke);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.18);
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  position: relative;
+  padding: 12px 14px;
+  border-radius: var(--radius2);
+  border: 1px solid var(--stroke);
+  background: rgba(0,0,0,0.20);
+  user-select: none;
+  line-height: 1.2;
+  transition: transform 0.06s ease, border-color 0.12s ease, background 0.12s ease, opacity 0.12s ease;
+}
+
+.item:active {
+  transform: scale(0.99);
+}
+
+.item:hover {
+  border-color: var(--stroke2);
+}
+
+.item.crossed {
+  opacity: 0.55;
+  text-decoration: line-through;
+}
+
+.item.crossed::after {
+  content: "✓";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: rgba(255,255,255,0.75);
+}
+
+.hint {
+  margin: 10px 0 0;
+  color: var(--muted2);
+  font-size: 13px;
+}
+
+/* Phone-friendly: stack controls nicely */
+@media (max-width: 520px) {
+  .controls {
+    grid-template-columns: 1fr 1fr;
+  }
+  .controls button {
+    grid-column: 1 / -1;
+  }
+}

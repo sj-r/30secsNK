@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>30 Seconds SK SSL</title>
+</head>
+<body>
+  <main class="wrap">
+    <h1>30 Seconds Scheikunde SSL</h1>
+
+    <section class="controls">
+      <label>
+        Course length
+        <select id="course">
+          <option value="2">2-day</option>
+          <option value="3">3-day</option>
+        </select>
+      </label>
+
+      <label>
+        Day
+        <select id="day"></select>
+      </label>
+
+      <button id="renew">Renew</button>
+    </section>
+
+    <section class="card">
+      <h2>Card</h2>
+      <ul id="items" class="items"></ul>
+      <p class="hint">Tap an item to cross it out.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    // register service worker for offline use
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js");
+    }
+  </script>
+</body>
+
+</html>
+
