@@ -1,16 +1,18 @@
 // ======= Your lists (ported) =======
-const list1 = ["Avondprogramma","Afterparty","Examen","CITO","CE","SE","SSL","Leiden","Scheikunde","Haverkoek","BiNaS","Atoom","Ion","Lading","Elektron","Periodiek Systeem","I love Stappenplan","STPL","Stroomgeleiding","Reactievergelijking","Oplossen","VanderWaalsbinding","H-brug","Zout","Metaal","Moleculaire stof",
-  "Dipool","Ionrooster","Polair","Apolair","Atoombinding","Ladingscentra","Kookpunt","Smeltpunt","Microniveau","Macroniveau","Structuurformule","Gas (g)","Vloeibaar (l)","Vast (s)","Opgelost (aq)","LASD","Coëfficiënten","Hydraat","Onbekend Deeltje","Omzetten",
-  "Strepen (LASD)","Delen (LASD)","ALLES","Antwoord (ALLES)","Logisch (ALLES)","Leesbaar (ALLES)","Eenheid (ALLES)","Significantie (ALLES)","mol","molmassa","kruistabel","Molair Volume","Procent","Massapercentage","Volumepercentage","Liter","Gram","ton","deel/geheel","molverhouding","rendement","Einddoel","dichtheid"
+const list1 = ["Avondprogramma","Afterparty","Examen","CITO","CE","SE","SSL","Leiden","Natuurkunde","Haverkoek","BiNaS", "Podium", "Raaklijn", "Stappenplam", "Schets", "Oppervlakte", "Wet van Energiebehoud", "SALE", "Significantie (SALE)", "Antwoord (SALE)", "Logisch (SALE)", "Eenheid (SALE)", "Ontbinden", "Construeren", "Beginpunt", "Eindpunt", "Formule", "Grafieken",
+    "Bewegen", "Mechanica", "Energie", "Krachten", "Constante Snelheid", "FRes", "Vermogen", "Wrijvingsenergie", "Arbeid", "Kinetische Energie", "Zwaarte-energie", "Zwaartekracht", "Gravitatie-energie", "Veerenergie", "Newton", "Joules", "Normaalkracht", "Wrijvingskracht", "Aandrijfkracht", "Veerkracht", "Einstein", "Spankracht", "Gravitatiekracht", "F = ma", "middelpuntzoekendekracht",
+    "cirkelbeweging", "baansnelheid", "Vernelling", "Snelheid", "Hoofddocent", "Whiteboard"
 ];
 
-const list2 = list1.concat(["Evenwicht","Evenwichtsvoorwaarde (K)","Evenwichtsreactie","Reactiewarmte","Vormingswarmte","Delta E","E begin","E eind","Overmaat","Ondermaat","Exotherm","Endotherm","Joule","Joule per Mol","Katalysator","geactiveerde toestand","Druk","Temperatuur","Concentratie","Botsende Deeltjesmodel","Reactiesnelheid",
-  "Energie","Aflopend","Naamgeving","HONC","COOH-groep/zuurgroep","OH-groep (alcoholgroep)","Ester","Verestering","H2O","Condensatiereactie","Additiereactie","Substitutiereactie","Dubbele binding","Methylgroep (CH3-groep)","Additiepolymerisatie","Condensatiepolymerisatie","Monomeer","Polymeer","Knakken","Copolymeer",
-  "Crosslinks","Thermoharder","Thermoplast","Kristallijn","Amorf","Zijketens","Weekmaker","PORN","Electrochemische Cel","Elektronen","Oxidator","Reductor","Halfreactie","Totaalreactie","Elektronenoverdracht","RedOx","Elektrode","Opladen","Stroomlevering","DNA","m-RNA","Coderende streng","Matrijsstreng","Hydrolyse","Zeep","Codon","Basen","Aminozuur","Peptideketen"
+const list2 = list1.concat(["Elektromagnetisme", "Trillingen", "Golven", "Kwantum", "Elektrisch Veld", "Magnetisch Veld", "Elektron", "Proton", "Neutron", "Elektrische Kracht", "Elektrische Energie", "Veldsterkte", "Veldlijnen", "Magneet", "Noordpool", "Zuidpool", "Draad", "Spoel", "Stroom", "Tesla", "FBI", "Lorenzkracht", "Inductie", "Volt", "Ampere", "Windingen", "Flux", "Amplitude", "Uitwijking",
+    "Trillingstijd", "Lopende Golf", "Staande golf", "Golfsnelheid", "Golflengte", "nanometer", "f = 1/T", "v = λ * f", "Knoop", "Buik", "Open uiteinde", "Gesloten uiteinde", "Grondtoon", "Boventoon", "l = n * λ * ½", "l = (2n-1) * ¼ * λ", "trilt maximaal", "kan niet trillen", "energiedigrammen", "grondtoestand", "aangeslagen toestand", "absorbtie", "ionisatie", "emissie", "fotonenergie", "plank's constante", "lichtsnelheid (c)",
+    "1D put", "principe van Pauli",
 ]);
 
-const list3 = list2.concat(["Lewisstructuur","Reactiemechanisme","Formele Lading","Grensstructuren","Cis-Trans isomerie","bindingshoeken","Partiële lading","niet-bindende elektronenparen","elektronenparen","Octetregel","TOG","Asymetrisch C-atoom","spiegelbeeldisomerie","C*","Stereo-isomeer","Enzym","stereo-specefiek","Zuur","Base","Kb","Kz","Sterk Zuur","Zwak Zuur","Sterke Base","Zwakke Base",
-  "H3O+","OH-","H+","pH","pOH","-log[H3O+]","-log[OH-]","Verhouding","Concentratie","Molair","E-factor","Atoomeconomie","Extractie","Bezinken","Destilleren","Blokschema","Hernieuwbaar","Milieu"
+const list3 = list2.concat(["De Broglie golflengte", "interferrentie", "constructief", "destructief", "weglengteverschil", "faseverschil", "tralies", "tralieconstante", "waarschijnlijkheidsverdeling", "Astrophysica", "Straal", "Oppervlakte", "Intensiteit", "λ max", "Temperatuur", "Kelvin", "Watt", "Vermogen", "Elektriciteit", "Schakelingenspel", "Bingo regel", "U = IR", "SOS-regel", "Weerstand",
+    "Serieschakeling", "Parallelschakeling", "Bronspanning", "Stroommeter", "Spanningsmeter", "PTC", "NTC", "LDR", "Licht Dempt R", "Diode", "Soortelijke Weerstand", "R*A/L", "Lengte", "diameter", "elektrisch vermogen", "Ohm-meter", "Ohm", "Rendement", "P nuttig / P totaal * 100%", "lading", "capaciteit", "Kernphysica", "Reactievergelijking", "Massagetal", "Atoomnummer", "Alpha-straling", "Beta-straling", "Gamma-straling", "Doordringend Vermogen",
+    "ioniserend vermogen", "Beschieting", "Halveringstijd", "Halveringsdikte", "Aantal Kernen", "Activiteit", "Dikte", "Dosis", "Massa", "Dosisequivalent", "Weegfactor", "Gray", "Kilogram", "Sievert"
+
 ]);
 
 // ======= Core logic (Python -> JS) =======
@@ -135,5 +137,6 @@ dayEl.addEventListener("change", () => {
   saveState(state);
   renew(state);
 });
+
 
 renewEl.addEventListener("click", () => renew(state));
