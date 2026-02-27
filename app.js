@@ -1,5 +1,5 @@
 // ======= Your lists (ported) =======
-const list1 = ["Avondprogramma","Afterparty","Examen","CITO","CE","SE","SSL","Leiden","Natuurkunde","Haverkoek","BiNaS", "Podium", "Raaklijn", "Stappenplam", "Schets", "Oppervlakte", "Wet van Energiebehoud", "SALE", "Significantie (SALE)", "Antwoord (SALE)", "Logisch (SALE)", "Eenheid (SALE)", "Ontbinden", "Construeren", "Beginpunt", "Eindpunt", "Formule", "Grafieken",
+const list1 = ["Avondprogramma","Examen","CITO","CE","SE","SSL","Leiden","Natuurkunde","Haverkoek","BiNaS", "Podium", "Raaklijn", "Stappenplam", "Schets", "Oppervlakte", "Wet van Energiebehoud", "SALE", "Significantie (SALE)", "Antwoord (SALE)", "Logisch (SALE)", "Eenheid (SALE)", "Ontbinden", "Construeren", "Beginpunt", "Eindpunt", "Formule", "Grafieken",
     "Bewegen", "Mechanica", "Energie", "Krachten", "Constante Snelheid", "FRes", "Vermogen", "Wrijvingsenergie", "Arbeid", "Kinetische Energie", "Zwaarte-energie", "Zwaartekracht", "Gravitatie-energie", "Veerenergie", "Newton", "Joules", "Normaalkracht", "Wrijvingskracht", "Aandrijfkracht", "Veerkracht", "Einstein", "Spankracht", "Gravitatiekracht", "F = ma", "middelpuntzoekendekracht",
     "cirkelbeweging", "baansnelheid", "Vernelling", "Snelheid", "Hoofddocent", "Whiteboard"
 ];
@@ -10,7 +10,7 @@ const list2 = list1.concat(["Elektromagnetisme", "Trillingen", "Golven", "Kwantu
 ]);
 
 const list3 = list2.concat(["De Broglie golflengte", "interferrentie", "constructief", "destructief", "weglengteverschil", "faseverschil", "tralies", "tralieconstante", "waarschijnlijkheidsverdeling", "Astrophysica", "Straal", "Oppervlakte", "Intensiteit", "λ max", "Temperatuur", "Kelvin", "Watt", "Vermogen", "Elektriciteit", "Schakelingenspel", "Bingo regel", "U = IR", "SOS-regel", "Weerstand",
-    "Serieschakeling", "Parallelschakeling", "Bronspanning", "Stroommeter", "Spanningsmeter", "PTC", "NTC", "LDR", "Licht Dempt R", "Diode", "Soortelijke Weerstand", "R*A/L", "Lengte", "diameter", "elektrisch vermogen", "Ohm-meter", "Ohm", "Rendement", "P nuttig / P totaal * 100%", "lading", "capaciteit", "Kernphysica", "Reactievergelijking", "Massagetal", "Atoomnummer", "Alpha-straling", "Beta-straling", "Gamma-straling", "Doordringend Vermogen",
+    "Serieschakeling", "Parallelschakeling", "Bronspanning", "Stroommeter", "Spanningsmeter", "PTC", "NTC", "LDR", "Licht Dempt R", "Diode", "Soortelijke Weerstand", "R*A/L", "Lengte", "diameter", "elektrisch vermogen", "Ohm-meter", "Ohm", "Rendement", "P nuttig / P totaal * 100%", "lading", "capaciteit", "Kernfysica", "Reactievergelijking", "Massagetal", "Atoomnummer", "Alfa-straling", "Beta-straling", "Gamma-straling", "Doordringend Vermogen",
     "ioniserend vermogen", "Beschieting", "Halveringstijd", "Halveringsdikte", "Aantal Kernen", "Activiteit", "Dikte", "Dosis", "Massa", "Dosisequivalent", "Weegfactor", "Gray", "Kilogram", "Sievert"
 
 ]);
@@ -140,3 +140,4 @@ dayEl.addEventListener("change", () => {
 
 
 renewEl.addEventListener("click", () => renew(state));
+
