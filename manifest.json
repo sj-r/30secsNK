@@ -1,5 +1,5 @@
 {
-  "name": "30 Seconds SSL Scheikunde",
+  "name": "30 Seconds SSL Natuurkunde",
   "short_name": "30 Seconds",
   "start_url": "./",
   "scope": "./",
@@ -8,3 +8,4 @@
   "theme_color": "#111111",
   "icons": []
 }
+
